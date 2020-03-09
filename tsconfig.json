@@ -1,0 +1,33 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "composite": true,
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "lib": ["dom", "es7"],
+        "noImplicitAny": true,
+        "strict": true,
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+
+        // this is required for `for ([K,V] of Map<K,V>)` in typescript
+        "downlevelIteration": true,
+
+        "newLine": "LF",
+        "skipLibCheck": true,
+        "paths": {
+            "@uniformdev/*": ["packages/*/src"]
+        }
+    },
+    "include": ["packages/*/src"]
+}

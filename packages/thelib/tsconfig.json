@@ -1,0 +1,22 @@
+// All of the path-based settings in this file can't be "inherited" from the base tsconfig.json.
+// Relative paths found in the configuration file will be resolved relative to the configuration file they originated in.
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "declarationDir": "./dist/esm",
+        "module": "es6",
+        "target": "es5",
+        "outDir": "./dist/esm",
+        "rootDir": "src",
+        // for references
+        "baseUrl": "src",
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "./src/**/*.spec.ts"
+    ],
+}
